@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+}
+body {
+  background-color: #f9f9f9 !important;
+}
+.navbar-brand {
+  font-size: 35px !important;
+  font-weight: 550;
+}
+.navbar-brand span {
+  color: #ffa500;
+  font-weight: 600;
+}
+.nav-link {
+  font-size: 16px;
+  font-weight: 550;
+}
+.nav-link:hover {
+  color: white !important;
+}
+.nav-item:hover {
+  background-color: #ffa500;
+  border-radius: 3px;
+}
+.btn[type="submit"] {
+  background-color: #ffa500;
+  color: white;
+}
+.btn[type="submit"]:hover {
+  background-color: white;
+  color: #ffa500;
+  border: 1px solid #ffa500;
+}
+.navbar-toggler span {
+  color: #ffa500;
+}
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url("./images/Travel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99vw;
+  height: 100vh;
+  background-position: top;
+}
+.content h1 {
+  text-shadow: 0px 1px 1px black;
+  animation: animtext 4s steps(80, end);
+  transition: all cubic-bezier(0.1, 0.7, 1, 0.1);
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+@keyframes animtext {
+  from {
+    width: 0;
+    transition: all 2s ease-in-out;
+  }
+}
+/* .content h2 span {
+  color: #ffa500;
+  font-size: 70px;
+} */
+.custom-btn {
+  background-color: #ffa500 !important;
+  color: white !important;
+  width: 150px;
+}
+.custom-btn:hover {
+  background-color: white !important;
+  color: #ffa500 !important;
+  width: 150px;
+}
+.h1 span {
+  color: #ffa500;
+}
+.card img {
+  height: 75vh;
+}
+@media only screen and (max-width: 1200px) {
+  .book-card {
+    display: none;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+      url("./images/travel-small.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position: top;
+  }
+}
